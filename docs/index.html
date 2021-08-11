@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capitals</title>
+    <style>
+        body {
+            background-image: url("https://tse1-mm.cn.bing.net/th/id/R-C.e84583dee6b4be98fad5d4c6d6fa3df0?rik=xSvfzumCdYneSQ&riu=http%3a%2f%2ffile06.16sucai.com%2f2016%2f0510%2f0b1a1630f2f360a6ea71b50782dc3764.jpg&ehk=WMoXcnXJ8itIrUvOrAEbcL3rWd9ISQLNtsh%2f2NI7H8E%3d&risl=&pid=ImgRaw&r=0");
+            background-size: cover;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 600px;
+            height: 600px;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            border: 0 solid orange;
+            position: relative;
+            transition: all 1s linear;
+            transform-style: preserve-3d;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .front, .back {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            color: white;
+            font-size: 3em;
+            border-radius: 10px;
+        }
+
+        .front {
+            background: linear-gradient(red, green);
+            z-index: 2;
+            backface-visibility: hidden;
+        }
+
+        .back {
+            background: linear-gradient(blue, orange);
+            z-index: 1;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+<h1>What is the capital of...</h1>
+<div class="container">
+    <div>
+        <div class="card">
+            <div class="front"><p>United States of America</p></div>
+            <div class="back"><p>Washington, D.C.</p></div>
+        </div>
+    </div>
+    <div>
+        <div class="card">
+            <div class="front"><p>United Kingdom</p></div>
+            <div class="back"><p>London</p></div>
+        </div>
+    </div>
+    <div>
+        <div class="card">
+            <div class="front"><p>Turkey</p></div>
+            <div class="back"><p>Ankara</p></div>
+        </div>
+    </div>
+    <div>
+        <div class="card">
+            <div class="front"><p>Front</p></div>
+            <div class="back"><p>Back</p></div>
+        </div>
+    </div>
+    <div>
+        <div class="card">
+            <div class="front"><p>Front</p></div>
+            <div class="back"><p>Back</p></div>
+        </div>
+    </div>
+    <div>
+        <div class="card">
+            <div class="front"><p>Front</p></div>
+            <div class="back"><p>Back</p></div>
+        </div>
+    </div>
+    <div>
+        <div class="card">
+            <div class="front"><p>Front</p></div>
+            <div class="back"><p>Back</p></div>
+        </div>
+    </div>
+    <div>
+        <div class="card">
+            <div class="front"><p>Front</p></div>
+            <div class="back"><p>Back</p></div>
+        </div>
+    </div>
+    <div>
+        <div class="card">
+            <div class="front"><p>Front</p></div>
+            <div class="back"><p>Back</p></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
